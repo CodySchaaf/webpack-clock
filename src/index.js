@@ -1,3 +1,3 @@
-import { app } from "./app";
+import { App } from "./App";
 
-document.body.appendChild(app());
+document.body.appendChild(App());

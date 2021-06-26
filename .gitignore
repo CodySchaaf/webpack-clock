@@ -1,5 +1,5 @@
 .vscode
 .idea
 
-dist/main.js
+dist
 node_modules
