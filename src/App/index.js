@@ -1,7 +1,16 @@
+import { Title } from "../Title";
+import { Clock } from "../Clock";
+
 export function App() {
-  const element = document.createElement("div");
+  const date = new Date();
+  const dayOfTheWeek = date.toLocaleDateString([], { weekday: "long" });
+  const time = date.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 
-  element.innerHTML = "Welcome to my app";
+  document.title = time;
 
-  return element;
+  Title({ title: `It\'s ${dayOfTheWeek} and the current time is:` });
+  Clock({ time });
 }
