@@ -1,6 +1,8 @@
 import { Title } from "../Title";
 import { Clock } from "../Clock";
 
+import './style.css';
+
 export function App() {
   const date = new Date();
   const dayOfTheWeek = date.toLocaleDateString([], { weekday: "long" });
