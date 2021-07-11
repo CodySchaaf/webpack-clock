@@ -14,6 +14,7 @@ div.clock-container {
 
 div.clock::before {
   color: rgba(255, 255, 255, 0.1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   position: absolute;
   z-index: -1;
   top: 0;
