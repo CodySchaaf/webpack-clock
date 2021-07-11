@@ -1,0 +1,27 @@
+div.clock-container {
+  background: url("./dog.jpg") no-repeat center / cover;
+  flex: 1;
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+}
+
+div.clock::before {
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  content: "88:88";
+}
+
+div.clock {
+  color: #ffffff;
+  /* text shadow for contrast */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: monospace;
+  margin: 5px 0;
+  position: relative;
+  font-size: 100px;
+}
