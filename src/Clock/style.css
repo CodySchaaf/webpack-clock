@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('./digital-7.ttf');
+}
+
 div.clock-container {
     background-color: #000000;
     flex: 1;
@@ -18,7 +23,7 @@ div.clock::before {
 
 div.clock {
     color: #ffffff;
-    font-family: monospace;
+    font-family: 'digital-7', monospace;
     margin: 5px 0;
     position: relative;
     font-size: 100px;
