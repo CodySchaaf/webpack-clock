@@ -1,6 +1,5 @@
 import { Title } from "../Title";
 import { Clock } from "../Clock";
-import {Tooltip} from "../Tooltip";
 
 export function App() {
   const date = new Date();
@@ -14,5 +13,9 @@ export function App() {
 
   Title({ title: `It\'s ${dayOfTheWeek} and the current time is:` });
   const anchor = Clock({ time });
-  Tooltip({ anchor });
+
+  (requestIdleCallback ?? setTimeout)(async () => {
+    const { Tooltip } = await import("../Tooltip");
+    Tooltip({ anchor });
+  });
 }
