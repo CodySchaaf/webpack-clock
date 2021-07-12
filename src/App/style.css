@@ -21,6 +21,6 @@ dd {
 
 body {
   display: grid;
-  grid-template-rows: 20% auto;
+  grid-template-rows: 20% 80% 20%;
   min-height: 100vh;
 }

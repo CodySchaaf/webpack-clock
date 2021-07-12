@@ -1,5 +1,6 @@
 import { Title } from "../Title";
 import { Clock } from "../Clock";
+import { Quote } from "../Quote";
 
 import "./style.css";
 
@@ -20,4 +21,6 @@ export function App() {
     const { Tooltip } = await import("../Tooltip");
     Tooltip({ anchor });
   });
+
+  Quote();
 }

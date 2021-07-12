@@ -1,0 +1,17 @@
+.quote {
+  background: #333;
+  color: white;
+  display: flex;
+}
+.quote > div {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+
+.quote.visible > div {
+  opacity: 1;
+}

@@ -1,5 +1,6 @@
 import { createPopper } from "@popperjs/core";
-import Quotes from "../Tooltip/quotes.json";
+import Quotes from "../Quote/quotes.json";
+import "./style.css";
 
 export function Tooltip({ anchor }) {
   const tooltip = document.createElement("div");
