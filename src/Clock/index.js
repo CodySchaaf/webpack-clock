@@ -1,3 +1,7 @@
 export function Clock({ time }) {
-  document.querySelector(".clock").innerHTML = time;
+  const clockElement = document.querySelector(".clock");
+
+  clockElement.innerHTML = time;
+
+  return clockElement;
 }

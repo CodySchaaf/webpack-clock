@@ -1,5 +1,6 @@
 import { Title } from "../Title";
 import { Clock } from "../Clock";
+import {Tooltip} from "../Tooltip";
 
 export function App() {
   const date = new Date();
@@ -12,5 +13,6 @@ export function App() {
   document.title = time;
 
   Title({ title: `It\'s ${dayOfTheWeek} and the current time is:` });
-  Clock({ time });
+  const anchor = Clock({ time });
+  Tooltip({ anchor });
 }

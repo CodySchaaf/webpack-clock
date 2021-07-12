@@ -16,4 +16,9 @@ module.exports = {
   devServer: {
     contentBase: "./dist",
   },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+  },
 };
