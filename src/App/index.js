@@ -14,5 +14,10 @@ export function App() {
   document.title = time;
 
   Title({ title: `It\'s ${dayOfTheWeek} and the current time is:` });
-  Clock({ time });
+  const anchor = Clock({ time });
+
+  (requestIdleCallback ?? setTimeout)(async () => {
+    const { Tooltip } = await import("../Tooltip");
+    Tooltip({ anchor });
+  });
 }
