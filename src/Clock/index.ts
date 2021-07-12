@@ -1,7 +1,9 @@
 export function Clock({ time }: { time: string }) {
-  const clockDiv = document.querySelector(".clock");
+  const clockElement = document.querySelector(".clock");
 
-  if (clockDiv) {
-    clockDiv.innerHTML = time;
+  if (clockElement) {
+    clockElement.innerHTML = time;
   }
+
+  return clockElement;
 }
